@@ -1,6 +1,6 @@
 {
   "name": "create-mern-stack-app",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Template for starting a basic MERN stack project",
   "main": "index.js",
   "scripts": {

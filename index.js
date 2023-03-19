@@ -38,7 +38,7 @@ prompt(questions).then(answers => {
     npmInstallCmd += ' eslint';
   }
 
-  execSync(`${gitCloneCmd} && ${npmInstallCmd} && npm start`);
+  execSync(`${gitCloneCmd} && ${npmInstallCmd}`);
 
   // Rename the directory to the user-specified name
   execSync(`mv ${projectName} ${process.cwd()}/${projectName}`);
