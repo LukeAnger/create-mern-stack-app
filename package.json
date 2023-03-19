@@ -1,6 +1,6 @@
 {
   "name": "create-mern-stack-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template for starting a basic MERN stack project",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,8 @@
     "express": "^4.18.2",
     "mongoose": "^7.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "create-mern-stack-app": "git+https://github.com/LukeAnger/create-mern-stack-app.git"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
