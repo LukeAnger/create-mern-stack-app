@@ -2,13 +2,13 @@
 
 const { execSync } = require('child_process');
 const { prompt } = require('inquirer');
-const projectName = process.argv[2] || 'my-mern-app';
 
 const questions = [
   {
     type: 'input',
     name: 'projectName',
     message: "Please specify the project directory (e.g. 'my-mern-app')",
+    default: 'my-mern-app',
   },
   {
     type: 'confirm',
@@ -27,8 +27,7 @@ const questions = [
 prompt(questions).then(answers => {
   const { projectName, installTypescript, installEslint } = answers;
 
-  const projectName = answers.projectName;
-  const gitCloneCmd = `git clone https://github.com/LukeAnger/create-mern-stack-app.git ${projectName}`;
+  const gitCloneCmd = `git clone https://github.com/LukeAnger/mern-stack-template.git ${projectName}`;
   const npmInstallCmd = `cd ${projectName} && npm install`;
 
   if (installTypescript) {
