@@ -4,17 +4,6 @@ const { execSync } = require('child_process');
 const { prompt } = require('inquirer');
 const projectName = process.argv[2] || 'my-mern-app';
 
-prompt({
-    type: 'input',
-    name: 'projectName',
-    message: "Please specify the project directory (e.g. 'my-mern-app')",
-  })
-  .then((answers) => {
-    const projectName = answers.projectName;
-    // rest of your code goes here
-  });
-
-
 const questions = [
   {
     type: 'input',
