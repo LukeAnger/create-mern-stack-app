@@ -1,11 +1,14 @@
 {
   "name": "create-mern-stack-app",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Template for starting a basic MERN stack project",
   "main": "index.js",
   "scripts": {
     "test": "test",
     "dev": "webpack serve --open"
+  },
+  "bin": {
+    "create-mern-stack-app": "./index.js"
   },
   "repository": {
     "type": "git",
